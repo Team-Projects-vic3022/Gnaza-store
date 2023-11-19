@@ -1,0 +1,14 @@
+.about {
+  &__container {
+    .about__heading {
+      &__text {
+        text-align: center;
+
+        h3 {
+          font-size: 1.6rem;
+          letter-spacing: 0.5rem;
+        }
+      }
+    }
+  }
+}

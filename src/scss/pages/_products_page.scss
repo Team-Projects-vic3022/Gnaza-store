@@ -1,0 +1,126 @@
+// Feautured Products Section
+.feautured__products__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 3rem;
+
+  .product {
+    box-shadow: 0 0 0rem 0.2rem rgb(185, 174, 150);
+    &:hover {
+      box-shadow: 0 0 1rem 1rem rgb(185, 174, 150);
+    }
+
+    &__image {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .product__text {
+      text-align: center;
+      padding-block: 1rem;
+
+      h3 {
+        font-size: 1.6rem;
+      }
+
+      h5 {
+        font-size: 2rem;
+        font-family: "meddon";
+        color: rgba(34, 34, 34, 0.5);
+      }
+
+      .amt__btn {
+        max-width: 15rem;
+        margin-inline: auto;
+        background-color: transparent;
+        border: 1px solid black;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+
+        span {
+          font-size: 2rem;
+          padding: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// All Products Section
+.all__products {
+  .all__products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 6rem 3rem;
+
+    .product {
+      box-shadow: 0 0 0rem 0.2rem rgb(185, 174, 150);
+      &:hover {
+        box-shadow: 0 0 1rem 1rem rgb(185, 174, 150);
+      }
+
+      &__image {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .product__text {
+        text-align: center;
+        padding-block: 1rem;
+
+        h3 {
+          font-size: 1.6rem;
+        }
+
+        h5 {
+          font-size: 2rem;
+          font-family: "meddon";
+          color: rgba(34, 34, 34, 0.5);
+        }
+
+        .amt__btn {
+          max-width: 15rem;
+          margin-inline: auto;
+          background-color: transparent;
+          border: 1px solid black;
+
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-content: space-between;
+
+          span {
+            font-size: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// products heading
+.products {
+  .nav {
+    margin-bottom: 5rem;
+  }
+
+  .banner {
+    margin-bottom: 5rem;
+  }
+
+  .banner {
+    .banner__image {
+      height: 30vh;
+    }
+  }
+}

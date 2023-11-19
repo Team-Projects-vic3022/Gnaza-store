@@ -1,0 +1,40 @@
+.footer {
+  padding: 10rem 0 5rem;
+  .footer__container {
+    .footer__quote {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: center;
+      column-gap: 5rem;
+      margin-bottom: 6rem;
+
+      h3 {
+        font-size: clamp(1.5rem, 1rem + 2.5vw, 2.5rem);
+        font-weight: 400;
+        max-width: 80rem;
+      }
+
+      .footer__logo {
+        font-size: 8rem;
+        justify-self: center;
+      }
+    }
+
+    .footer__sections {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      h2 {
+        font-size: clamp(3rem, 1rem + 2.5vw, 4rem);
+        margin-bottom: 6rem;
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
