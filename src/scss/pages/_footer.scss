@@ -9,9 +9,10 @@
       margin-bottom: 6rem;
 
       h3 {
-        font-size: clamp(1.5rem, 1rem + 2.5vw, 2.5rem);
+        font-size: clamp(1.6rem, 1rem + 2vw, 2rem);
         font-weight: 400;
-        max-width: 80rem;
+        max-width: 50rem;
+        line-height: 2;
       }
 
       .footer__logo {
@@ -25,15 +26,17 @@
       grid-template-columns: repeat(3, 1fr);
 
       h2 {
-        font-size: clamp(3rem, 1rem + 2.5vw, 4rem);
+        font-size: clamp(2.5rem, 1rem + 2.5vw, 3.5rem);
         margin-bottom: 6rem;
-        font-family: "Playfair Display", serif;
+        color: var(--clr-pry-1);
         font-weight: 400;
       }
 
       h3 {
         font-size: 1.5rem;
         margin-bottom: 3rem;
+        color: var(--clr-pry-8);
+        font-weight: 600;
       }
     }
   }

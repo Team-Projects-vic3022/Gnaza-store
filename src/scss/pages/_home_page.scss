@@ -1,5 +1,6 @@
 header {
   background-color: #faf9f7;
+  background-color: var(--clr-pry-4);
   padding-block: 5rem;
 }
 
@@ -71,8 +72,12 @@ header {
     }
   }
 
-  button {
+  .btn {
     padding: 2rem 4rem;
+    margin-bottom: 1rem;
+
+    color: var(--clr-pry-1);
+    border: 1px solid var(--clr-pry-1);
   }
 }
 
@@ -89,9 +94,17 @@ header {
 
       h3 {
         font-size: 2rem;
+        margin-bottom: 3rem;
+        font-weight: 600;
       }
       h1 {
-        font-size: clamp(5rem, 1rem + 4.8vw, 10rem);
+        font-size: clamp(3rem, 1rem + 4.8vw, 5rem);
+        font-weight: 300;
+        margin-bottom: 3rem;
+      }
+
+      .btn {
+        padding: 2rem 4rem;
       }
     }
 

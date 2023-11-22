@@ -1,9 +1,21 @@
 @forward "../pages";
 
-@import url("https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat:wght@300;400&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat:wght@300;400;600;700&family=Playfair+Display&display=swap");
 
 :root {
-  --clr-pry-1: blue;
+  // dark
+  --clr-pry-1: #d9c0a2; // 0%
+  --clr-pry-2: #2b2620; // 80%
+  --clr-pry-3: #413a31; // 70%
+
+  --clr-pry-8: rgba(44, 39, 33, 0.8); // 80%
+  --clr-pry-7: rgba(43, 39, 33, 0.5); // 80%
+
+  // light
+
+  --clr-pry-4: #fbf9f6; // 90%
+  --clr-pry-5: #f7f2ec; // 80%
+  --clr-pry-6: #f4ece3; // 70%
 }
 
 * {
@@ -25,7 +37,7 @@ html {
 body {
   text-transform: capitalize;
   font-family: "montserrat", "sans-serif";
-  color: rgb(18, 18, 18);
+  color: var(--clr-pry-2);
 }
 
 ul {
@@ -40,7 +52,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: none;
+  color: var(--clr-pry-2);
 }
 
 .section__center {
@@ -60,20 +72,22 @@ a:active {
   margin-bottom: 15rem;
 }
 
-.btn {
-  width: 100%;
-  max-width: 15rem;
-  margin-bottom: 1rem;
-}
-
 .btn,
-.products__btn {
+.products__btn,
+.amt__btn {
   background-color: transparent;
-  border: 1px solid black;
-  padding: 1rem 2rem;
+  border: 1px solid var(--clr-pry-2);
   cursor: pointer;
   font-size: 1.6rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+
+.products__btn {
+  color: var(--clr-pry-1);
+  border: 1px solid var(--clr-pry-1);
+  padding: 2rem 4rem;
 }
 
 .text__center {
@@ -105,5 +119,11 @@ a:active {
       margin-right: 0;
       padding-left: 1rem;
     }
+  }
+}
+
+@media (max-width: 950px) {
+  html {
+    font-size: 50%;
   }
 }
