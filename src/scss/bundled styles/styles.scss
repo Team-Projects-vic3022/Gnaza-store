@@ -16,6 +16,11 @@
   --clr-pry-4: #fbf9f6; // 90%
   --clr-pry-5: #f7f2ec; // 80%
   --clr-pry-6: #f4ece3; // 70%
+
+  --font-size-1: clamp(5rem, 1rem + 4.8vw, 10rem);
+  --font-size-2: clamp(3rem, 1rem + 2.5vw, 4rem);
+  --font-size-3: clamp(2.5rem, 1rem + 2.5vw, 3.5rem);
+  --font-size-4: clamp(1.6rem, 1rem + 2vw, 2rem);
 }
 
 * {
@@ -55,6 +60,10 @@ a:active {
   color: var(--clr-pry-2);
 }
 
+.nav--mb {
+  margin-bottom: 5rem;
+}
+
 .section__center {
   width: min(100% - 10rem, 130rem);
   margin-inline: auto;
@@ -62,7 +71,7 @@ a:active {
 
 .sub__section {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 1rem + 2.5vw, 4rem);
+  font-size: var(--font-size-2);
   font-weight: 400;
   text-align: center;
   margin-bottom: 3rem;
@@ -76,7 +85,8 @@ a:active {
 .products__btn,
 .amt__btn {
   background-color: transparent;
-  border: 1px solid var(--clr-pry-2);
+  border: 1px solid var(--clr-pry-1);
+  color: var(--clr-pry-1);
   cursor: pointer;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -85,7 +95,6 @@ a:active {
 }
 
 .products__btn {
-  color: var(--clr-pry-1);
   border: 1px solid var(--clr-pry-1);
   padding: 2rem 4rem;
 }
@@ -104,7 +113,8 @@ a:active {
     font-family: "playfair display", sans-serif;
     padding-block: 2rem;
     font-size: clamp(3rem, 1rem + 4.8vw, 4.5rem);
-    background-color: #faf9f7;
+    background-color: var(--clr-pry-4);
+    color: var(--clr-pry-2);
   }
 
   li {
@@ -124,6 +134,27 @@ a:active {
 
 @media (max-width: 950px) {
   html {
-    font-size: 50%;
+    font-size: 60%;
+  }
+  .section__center {
+    width: min(100% - 2rem, 130rem);
+  }
+
+  :root {
+    --font-size-1: clamp(4rem, 1rem + 4.8vw, 7.5rem);
+    --font-size-2: clamp(2.5rem, 1rem + 2.5vw, 5rem);
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 350px) {
+  :root {
+    --font-size-1: clamp(3rem, 1rem + 4.8vw, 7.5rem);
+    --font-size-2: clamp(2rem, 1rem + 2.5vw, 5rem);
   }
 }
