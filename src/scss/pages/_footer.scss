@@ -3,7 +3,7 @@
   .footer__container {
     .footer__quote {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: 2fr 1fr;
       align-items: center;
       column-gap: 5rem;
       margin-bottom: 6rem;
@@ -15,8 +15,8 @@
         line-height: 2;
       }
 
-      .footer__logo {
-        font-size: 8rem;
+      .nav__logo {
+        height: clamp(3rem, 2rem + 2vw, 5rem);
         justify-self: center;
       }
     }
@@ -55,6 +55,16 @@
 @media (max-width: 800px) {
   .footer {
     .footer__container {
+      .footer__quote {
+        grid-template-columns: 3fr max-content;
+        column-gap: 3rem;
+
+        h3 {
+          max-width: 100rem;
+          max-width: auto;
+        }
+      }
+
       .footer__sections {
         grid-template-columns: 1fr;
 
