@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gnaza</title>
     <link rel="stylesheet" href="../css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-  />
   <body>
     <!-- navigation section bottom start -->
     <section class="nav__bottom">
@@ -72,101 +72,27 @@
     </section>
     <!-- navigation section end -->
 
-    <!-- checkout section start -->
-    <section class="checkout section__center">
-      <!-- summary section start -->
-      <div class="cart mb">
-        <div class="carts">
-          <div class="table cart__container">
-            <div class="product__image">product image</div>
+    <section class="signup-signin__container section__center mb">
+      <div class="registration-container">
+        <h1>log in</h1>
+        <form action="/register" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-            <div class="cart__text">
-              <h1 class="product__name">product name</h1>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
 
-              <h3 class="price">price</h3>
-              <h3 class="quantity">quantity</h3>
-              <h3 class="total">subtotal</h3>
-              <i class="trash">remove</i>
-            </div>
-          </div>
+          <hr />
 
-          <div class="cart__container">
-            <div class="product__image">
-              <img src="../utils/images/look-3-1.jpg" alt="" />
-            </div>
+          <p>don't have an account <a href="">sign up</a></p>
 
-            <div class="cart__text">
-              <h1 class="product__name">Pearl Pendant Necklace</h1>
-
-              <h3 class="price">$30,000</h3>
-              <div class="amt__btn">
-                <span>-</span>
-                <span>10</span>
-                <span>+</span>
-              </div>
-              <h3 class="total">$90,000</h3>
-              <i class="trash">remove</i>
-            </div>
-          </div>
-          <div class="cart__container">
-            <div class="product__image">
-              <img src="../utils/images/look-3-1.jpg" alt="" />
-            </div>
-
-            <div class="cart__text">
-              <h1 class="product__name">Pearl Pendant Necklace</h1>
-
-              <h3 class="price">$30,000</h3>
-              <div class="amt__btn">
-                <span>-</span>
-                <span>10</span>
-                <span>+</span>
-              </div>
-              <h3 class="total">$90,000</h3>
-              <i class="trash">remove</i>
-            </div>
-          </div>
-        </div>
+          <button type="submit">Log in</button>
+        </form>
       </div>
-      <!-- summary section end -->
-      <form class="checkout__container mb">
-        <div class="form form__delivery" action="">
-          <div class="form__text">
-            <h2>delivery</h2>
-          </div>
-          <div class="form__inputs">
-            <input type="text" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-          </div>
-        </div>
-
-        <div class="form form__payment" action="">
-          <div class="form__text">
-            <h2>payment</h2>
-            <p>All transactions are secure and encrypted.</p>
-          </div>
-          <div class="credit">
-            <p>credit card</p>
-            <span>B</span>
-          </div>
-          <div class="form__inputs">
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-          </div>
-        </div>
-      </form>
+      <div class="signup__image">
+        <img src="../utils/images/look-3-1.jpg" alt="" />
+      </div>
     </section>
-    <!-- checkout section end -->
 
     <!-- footer section start -->
     <section class="footer">

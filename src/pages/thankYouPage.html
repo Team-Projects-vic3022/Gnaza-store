@@ -7,11 +7,21 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat:wght@300;400&family=Playfair+Display&display=swap");
 
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
       body {
         font-family: "montserrat";
-        background-color: #f5f5f5;
+        background-color: #d9c0a2;
         margin: 0;
-        padding: 0;
+        padding: 0 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,35 +30,42 @@
 
       .thank-you-container {
         text-align: center;
-        padding: 20px;
+        padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: #fff;
-        max-width: 40rem;
+        max-width: 50rem;
         width: 100%;
+
+        /* min-height: 40vh; */
       }
 
       h1 {
-        color: #2f74cc;
+        color: #6e5744;
+        font-size: clamp(2.5rem, 1rem + 4.8vw, 3.5rem);
+        margin-bottom: 2rem;
       }
 
       p {
         color: #555;
-        font-size: 18px;
+        font-size: 2rem;
+        line-height: 1.5;
       }
 
       .back-to-home {
         margin-top: 20px;
         text-decoration: none;
-        background-color: #2f74cc;
+        background-color: #a77b56;
         color: #fff;
         padding: 10px 15px;
         border-radius: 5px;
         display: inline-block;
+        font-size: 1.6rem;
+        transition: background 0.3s linear;
       }
 
       .back-to-home:hover {
-        background-color: #1c517b;
+        background-color: #6e5744;
       }
     </style>
   </head>

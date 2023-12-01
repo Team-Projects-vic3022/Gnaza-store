@@ -10,12 +10,15 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
-    border: 1px solid var(--clr-pry-1);
-    outline: none;
+    box-shadow: 0 0 0 1px var(--clr-pry-2);
+    border: none;
 
     &:active,
     &:focus {
-      outline: 1px solid var(--clr-pry-1);
+      border: none;
+      outline: none;
+
+      box-shadow: 0 0 0 2px var(--clr-pry-2);
     }
   }
 }

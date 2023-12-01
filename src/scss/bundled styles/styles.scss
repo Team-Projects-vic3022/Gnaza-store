@@ -138,7 +138,7 @@ a:active {
     font-size: 60%;
   }
   .section__center {
-    width: min(100% - 2rem, 130rem);
+    width: min(100% - 2.5rem, 130rem);
   }
 
   :root {
@@ -150,6 +150,10 @@ a:active {
 @media (max-width: 550px) {
   html {
     font-size: 55%;
+  }
+
+  .section__center {
+    width: min(100% - 1rem, 130rem);
   }
 }
 
