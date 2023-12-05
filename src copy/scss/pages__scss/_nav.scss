@@ -1,0 +1,27 @@
+nav {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  padding: 2rem 0;
+  z-index: 5;
+
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+
+    li {
+      a {
+        font-size: 2rem;
+        color: #2376b7;
+        font-weight: 600;
+      }
+    }
+  }
+
+  a {
+    img {
+      height: 5rem;
+    }
+  }
+}
