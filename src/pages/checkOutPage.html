@@ -75,76 +75,81 @@
     <!-- checkout section start -->
     <section class="checkout section__center">
       <!-- summary section start -->
-      <div class="cart mb">
-        <div class="carts">
-          <div class="table cart__container">
-            <div class="product__image">product image</div>
 
-            <div class="cart__text">
-              <h1 class="product__name">product name</h1>
+      <div class="checkout__items">
+        <div class="page__banner">
+          <h2>Products</h2>
+        </div>
 
-              <h3 class="price">price</h3>
-              <h3 class="quantity">quantity</h3>
-              <h3 class="total">subtotal</h3>
-              <i class="trash">remove</i>
-            </div>
-          </div>
-
-          <div class="cart__container">
-            <div class="product__image">
+        <div class="items mb">
+          <div class="item__container">
+            <div class="item__image">
               <img src="../utils/images/look-3-1.jpg" alt="" />
             </div>
 
-            <div class="cart__text">
-              <h1 class="product__name">Pearl Pendant Necklace</h1>
-
-              <h3 class="price">$30,000</h3>
-              <div class="amt__btn">
-                <span>-</span>
-                <span>10</span>
-                <span>+</span>
-              </div>
-              <h3 class="total">$90,000</h3>
-              <i class="trash">remove</i>
+            <div class="item__text">
+              <span class="item__amount">8</span>
+              <h3 class="item__name">Necklace</h3>
+              <h3 class="item__price">$30,000</h3>
             </div>
           </div>
-          <div class="cart__container">
-            <div class="product__image">
+
+          <div class="item__container">
+            <div class="item__image">
               <img src="../utils/images/look-3-1.jpg" alt="" />
             </div>
 
-            <div class="cart__text">
-              <h1 class="product__name">Pearl Pendant Necklace</h1>
-
-              <h3 class="price">$30,000</h3>
-              <div class="amt__btn">
-                <span>-</span>
-                <span>10</span>
-                <span>+</span>
-              </div>
-              <h3 class="total">$90,000</h3>
-              <i class="trash">remove</i>
+            <div class="item__text">
+              <span class="item__amount">8</span>
+              <h3 class="item__name">Necklace</h3>
+              <h3 class="item__price">$30,000</h3>
             </div>
           </div>
         </div>
+
+        <div class="subtotal">
+          <div class="subtotal__text">
+            <h1>order summery</h1>
+            <div class="total">
+              <h3>total item</h3>
+              <h3>3</h3>
+            </div>
+            <div class="total">
+              <h3>Subtotal</h3>
+              <h3>$840.00 USD</h3>
+            </div>
+            <div class="total">
+              <h3>tax</h3>
+              <h3>$8.00 USD</h3>
+            </div>
+            <div class="total">
+              <h3>shipping fee</h3>
+              <h3>$84USD</h3>
+            </div>
+            <div class="total">
+              <h3>total</h3>
+              <h3>$8443.30 USD</h3>
+            </div>
+            <hr />
+            <p>Taxes and shipping calculated at checkout</p>
+          </div>
+        </div>
       </div>
+
       <!-- summary section end -->
       <form class="checkout__container mb">
         <div class="form form__delivery" action="">
           <div class="form__text">
-            <h2>delivery</h2>
+            <h2>Shipping information</h2>
           </div>
           <div class="form__inputs">
-            <input type="text" name="text" required />
+            <input type="text" name="text" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="text" placeholder="Phone" required />
             <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
+            <input type="text" name="text" placeholder="State" required />
+            <input type="text" name="text" placeholder="City" required />
+            <input type="text" name="text" placeholder="Address" required />
           </div>
         </div>
 
@@ -158,10 +163,17 @@
             <span>B</span>
           </div>
           <div class="form__inputs">
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
-            <input type="" name="text" required />
+            <input type="text" name="" placeholder="Card Number" required />
+            <input
+              type=""
+              name="text"
+              placeholder="Expiration Date (MM / YY)"
+              required
+            />
+            <input type="" name="text" placeholder="Security code" required />
+            <input type="" name="text" placeholder="Name On Card" required />
+
+            <button class="btn">pay now</button>
           </div>
         </div>
       </form>
