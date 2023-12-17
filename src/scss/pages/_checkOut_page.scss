@@ -68,12 +68,6 @@
         margin-bottom: 1rem;
       }
 
-      textarea {
-        width: 100%;
-        height: 10rem;
-        resize: none;
-      }
-
       .subtotal__text {
         display: grid;
         row-gap: 3rem;
@@ -95,6 +89,7 @@
   .checkout__container {
     grid-column: 1;
     grid-row: 1;
+    padding-bottom: 10rem;
   }
 
   .cart {
@@ -106,27 +101,30 @@
   margin-bottom: 5rem;
   padding-right: 5rem;
 
-  input {
+  input,
+  select {
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
     box-shadow: 0 0 0 1px var(--clr-pry-2);
     border: none;
+    transition: all 0.1s linear;
 
     &:active,
     &:focus {
       border: none;
-      outline: none;
+      outline: solid var(--clr-pry-1);
 
-      box-shadow: 0 0 0 2px var(--clr-pry-2);
+      box-shadow: 0 0 1rem 5px var(--clr-pry-1);
     }
   }
 }
 
-.form__text,
-.credit {
+.form__text {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  margin-bottom: 5rem;
 
   h2 {
     font-size: 2rem;
@@ -148,70 +146,117 @@
 .form__delivery {
   .form__inputs {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 1.5rem;
+
+    select {
+      grid-column: 1 / -1;
+      background-color: transparent;
+    }
 
     input {
       grid-column: 1 / -1;
     }
+
     input:nth-child(2) {
-      grid-column: 1 / span 4;
+      grid-column: span 5;
     }
+
     input:nth-child(3) {
-      grid-column: 5 / -1;
+      grid-column: span 3;
     }
 
     input:nth-child(5),
     input:nth-child(6) {
-      grid-column: span 3;
+      grid-column: span 4;
     }
   }
 }
 
 // form delivery
-.form__payment {
-  .credit {
+
+.payment__types__container {
+  margin: 3rem 0;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .payment__type {
+    border: 1px solid var(--clr-pry-2);
+    border-bottom: none;
+
+    padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .form__inputs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1.5rem;
+
+    &:last-child {
+      border-bottom: 1px solid var(--clr-pry-2);
+      border-radius: 0 0 8px 8px;
+    }
+
+    &:first-child {
+      border-radius: 8px 8px 0 0;
+    }
 
     input {
-      grid-column: 1 / -1;
-    }
-    input:nth-child(2),
-    input:nth-child(3) {
-      grid-column: auto / span 1;
-      grid-row: 2;
+      margin-right: 1rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 100%;
+      box-shadow: none;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid blue;
+      }
     }
 
-    .btn {
-      grid-column: 1 / -1;
+    p {
+      font-size: 1.4rem;
+      font-weight: 600;
     }
   }
 }
 
-@media (max-width: 2220px) {
-  // form delivery
-  .form__delivery {
-    .form__inputs {
-      grid-template-rows: repeat(6, 1fr);
+.oder__notes__container {
+  textarea {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    box-shadow: 0 0 0 1px var(--clr-pry-2);
+    border: none;
+    transition: all 0.1s linear;
 
-      input {
-        grid-column: 1 / -1;
-      }
-      input:nth-child(2) {
-        grid-column: 1 / -1;
-      }
-      input:nth-child(3) {
-        grid-column: 1 / -1;
-      }
+    &:active,
+    &:focus {
+      border: none;
+      outline: solid var(--clr-pry-1);
+
+      box-shadow: 0 0 1rem 5px var(--clr-pry-1);
+    }
+  }
+}
+
+.checkout__backtocart__container {
+  padding-right: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: var(--clr-pry-1);
+    font-size: 1.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin-right: 1rem;
     }
   }
 }
@@ -220,7 +265,6 @@
   .checkout {
     max-width: 70rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
 
     .checkout__items {
       margin-bottom: 10rem;
@@ -237,6 +281,10 @@
       padding-right: 0;
     }
   }
+
+  .checkout__backtocart__container {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 800px) {
@@ -246,6 +294,22 @@
 
   // form delivery
   .form__delivery {
+    .form__inputs {
+      grid-template-rows: repeat(7, 1fr);
+
+      input:nth-child(2) {
+        grid-column: 1 / -1;
+      }
+
+      input:nth-child(3) {
+        grid-column: 1 / -1;
+      }
+
+      input:nth-child(5),
+      input:nth-child(6) {
+        grid-column: 1 / -1;
+      }
+    }
     .form__text {
       display: flex;
       justify-content: space-between;
@@ -257,6 +321,5 @@
       }
     }
   }
-
   // form delivery
 }

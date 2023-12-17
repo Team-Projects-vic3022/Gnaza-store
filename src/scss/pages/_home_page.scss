@@ -350,6 +350,14 @@ header {
           }
         }
       }
+
+      .page__icon:last-child {
+        padding-right: 1.8rem;
+
+        span {
+          right: 0;
+        }
+      }
     }
   }
 
