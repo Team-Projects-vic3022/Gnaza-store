@@ -1,0 +1,1 @@
+body{display:grid;justify-content:end}div{background-color:blue;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;width:400px;height:400px}div>ul:nth-child(3) span{color:orange}/*# sourceMappingURL=test.min.css.map */

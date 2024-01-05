@@ -175,6 +175,7 @@
   .feautured__products__container {
     grid-template-columns: repeat(auto-fill, minmax(26rem, max-content));
     gap: 1rem;
+    width: min(100% - 2.5rem, 100rem);
 
     .product {
       &__image {
@@ -217,7 +218,6 @@
 @media (max-width: 388px) {
   .feautured__products__container {
     grid-template-columns: repeat(auto-fill, minmax(16rem, max-content));
-    width: min(100% - 1rem, 100rem);
 
     .product {
       &__image {
@@ -233,6 +233,30 @@
       .product {
         &__image {
           height: 16rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 321px) {
+  .feautured__products__container {
+    grid-template-columns: repeat(auto-fill, minmax(28rem, max-content));
+
+    .product {
+      &__image {
+        height: 28rem;
+      }
+    }
+  }
+
+  .all__products {
+    .all__products__container {
+      grid-template-columns: repeat(auto-fill, minmax(28rem, max-content));
+
+      .product {
+        &__image {
+          height: 28rem;
         }
       }
     }

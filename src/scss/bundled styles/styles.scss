@@ -58,7 +58,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #2376b7;
+  color: var(--clr-pry-1);
 }
 
 .nav--mb {
@@ -153,7 +153,7 @@ a:active {
   }
 
   .section__center {
-    width: min(100% - 1rem, 130rem);
+    // width: min(100% - 2rem, 130rem);
   }
 }
 
