@@ -10,19 +10,16 @@
   gap: 3rem;
 
   .product {
-    // box-shadow: 0 0 0rem 0.2rem var(--clr-pry-1);
     transition: box-shadow 0.3s;
     border-radius: 1rem;
     background-color: var(--clr-pry-4);
 
-    cursor: pointer;
     &:hover {
-      box-shadow: 0 0 1rem 1rem var(--clr-pry-1);
+      box-shadow: 0 0 1rem var(--clr-pry-1);
     }
 
     &__image {
-      // padding: 2rem 2rem;
-
+      cursor: pointer;
       height: 30rem;
 
       img {
